@@ -29,16 +29,15 @@ export default {
   },
   methods: {
     async consultar() {
-      this.estudiante = await consultarEstudianteFachada(3);
+      this.estudiante = await consultarEstudianteFachada(1);
       console.log(this.estudiante);
     },
-
+    //private Integer id;
+    //private String nombre;
+    //private String apellido;
+    //private LocalDateTime fechaNacimiento;
+    //private String genero;
     async guardar() {
-      //private Integer id;
-      //private String nombre;
-      //private String apellido;
-      //private LocalDateTime fechaNacimiento;
-      //private String genero;
       let fecha = "1998-11-25";
       const estudianteToBody = {
         nombre: "Jordy",
